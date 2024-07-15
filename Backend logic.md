@@ -1,8 +1,3 @@
-# Backend Logic
-
-Content Type: Guide, Tools
-Finished: No
-
 ## Backend Logic
 
 > We first start a basic express server
