@@ -18,23 +18,23 @@
             <p class="text-center fw-semibold fs-4">Create the tasks</p>
         </div>
         <div class="row">
-            <form action="write" method="get">
+            <form action="/write" method="post">
                 <div class="mb-3">
                     <label for="basic-url" class="form-label fw-medium">Enter the name of your task</label>
                     <div class="input-group">
                       <span class="input-group-text" id="basic-addon3">Name</span>
-                      <input type="text" class="form-control" aria-describedby="basic-addon3 basic-addon4">
+                      <input type="text" name="name" class="form-control" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                   </div>
                   <div class="mb-3">
                     <label for="basic-url" class="form-label fw-medium">Enter the priority of the task</label>
                     <div class="input-group">
                       <span class="input-group-text" id="basic-addon3">Priority</span>
-                      <select class="form-select" aria-describedby="basic-addon3 basic-addon4">
+                      <select name="priority" class="form-select" aria-describedby="basic-addon3 basic-addon4">
                         <option selected>Choose your priority</option>
-                        <option value="1">Low</option>
-                        <option value="2">Medium</option>
-                        <option value="3">High</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
                       </select>
                     </div>
                   </div>
@@ -42,7 +42,7 @@
                     <label for="basic-url" class="form-label fw-medium">Select the due date</label>
                     <div class="input-group">
                       <span class="input-group-text" id="basic-addon3">Date</span>
-                      <input type="date" class="form-control" aria-describedby="basic-addon3 basic-addon4">
+                      <input type="date" name="date" class="form-control" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                     <div class="col-12 mt-3 mb-2">
                         <div class="d-grid col-3 m-auto">
